@@ -2,41 +2,78 @@
 <html>
 <head>
     <title>Bootstrap Grid System</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css>
     <style type="text/css">
         .pink{
             background: pink;
             border: 1px solid purple;
         }
+        .pic{
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
-<div class="container">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
-</div>
-<div class="container">
-    <div class="jumbotron">
-        <h1>The Image Galery</h1>
-        <p>A bunch of black selfies of my self i took during a rainy weather</p>
-    </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+    <!-- Nav  Bar Starts -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a href="#" class="navbar-brand">Richard Tamuno</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Ends -->
+    <!-- Jumbotron Bigins -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>The Image Galery</h1>
+            <p>A bunch of black selfies of my self i took during a rainy weather</p>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="thumbnail pic">
+                    <img src="img/IMG_20170921_111458.jpg">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="thumbnail pic">
+                    <img src="img/IMG_20170921_111835.jpg">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="thumbnail pic">
+                    <img src="img/IMG_20170921_112049.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jumbotron Ends -->
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

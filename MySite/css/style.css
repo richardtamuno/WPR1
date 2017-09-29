@@ -14,12 +14,13 @@ html {
 
 #h1name {
     font-weight: 400;
-    font-size: 5em;
+    font-size: 3em;
     letter-spacing: 7px;
 
 }
 #h3title{
     letter-spacing: 3px;
+    font-size: 3em;
 }
 
 .content{
@@ -56,12 +57,14 @@ html {
     padding-top: 10%;
     color: #c000ff;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.5em;
 }
 .aboutp{
     color: #1c232e;
     line-height: 180%;
     font-weight: 400;
+    text-align: justify;
 }
 
 #about{
@@ -88,11 +91,34 @@ html {
     letter-spacing: 2px;
     font-weight: 700;
 }
-.belowsecond-solubanner{
-    background-color: #ffffff;
+.services-light{
     position: relative;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    color: #c000ff;
+    color: #ebebee;
+    text-align: center;
 }
+.service-head{
+    padding-top: 5%;
+    margin: -21% 6% 0 6%;
+    width:87.5%;
+    color: #c000ff;
+    text-align: left;
+}
+#services{
+    background-color: #f4f4f7;
+}
+.services{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.service-detail{
+    background-color: transparent;
+    padding: 3% 3% 5% 3%;;
+    color: #272727;
+    text-align: center;
+}
+.service-detail:hover{
+    background-color: #ffffff;
+    color: #272727;

@@ -8,7 +8,7 @@ body,
 html {
     width: 100%;
     height: 100%;
-    font-family: "Lato";
+    font-family: 'Muli', sans-serif;
     color: white;
 }
 
@@ -23,7 +23,8 @@ html {
 }
 
 .content{
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%
 }
 
 #home{
@@ -31,11 +32,8 @@ html {
     background-size: cover;
     background-position: center;
     width: 100%;
-    position: relative;
+    position: relative !important;
     background-repeat: no-repeat;
-    padding: 0px;
-    height: 100%;
-    height: 100vh;
 }
 
 .btn,
@@ -54,9 +52,39 @@ html {
     color:#ffffff;
     background-color: #c000ff;
 }
-.abouth3{
+.headings{
+    padding-top: 10%;
     color: #c000ff;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 .aboutp{
     color: #1c232e;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+#about{
+    background-image: url(../img/aboutbg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.skillslist{
+    color: #000000;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.skills{
+    color: #c000ff;
+    font-weight: 900;
+}
+.skillshead{
+    padding-top: 10%;
+    color: #c000ff;
+    letter-spacing: 2px;
+    font-weight: 700;
 }

@@ -88,3 +88,11 @@ html {
     letter-spacing: 2px;
     font-weight: 700;
 }
+.belowsecond-solubanner{
+    background-color: #ffffff;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #c000ff;
+}

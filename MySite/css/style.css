@@ -59,6 +59,7 @@ html {
     letter-spacing: 2px;
     font-weight: 900;
     font-size: 1.5em;
+    text-align: left;
 }
 .aboutp{
     color: #1c232e;
@@ -75,22 +76,6 @@ html {
     position: relative;
     background-repeat: no-repeat;
 }
-
-.skillslist{
-    color: #000000;
-    letter-spacing: 3px;
-    font-weight: 700;
-}
-.skills{
-    color: #c000ff;
-    font-weight: 900;
-}
-.skillshead{
-    padding-top: 10%;
-    color: #c000ff;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
 .services-light{
     position: relative;
     padding: 0;
@@ -104,7 +89,7 @@ html {
     margin: -21% 6% 0 6%;
     width:87.5%;
     color: #c000ff;
-    text-align: left;
+    text-align: center;
 }
 #services{
     background-color: #f4f4f7;
@@ -117,8 +102,178 @@ html {
     background-color: transparent;
     padding: 3% 3% 5% 3%;;
     color: #272727;
-    text-align: center;
+    text-align: left;
 }
 .service-detail:hover{
     background-color: #ffffff;
     color: #272727;
+}
+
+/*Carousel*/
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #fff;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #fff;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #c000ff;
+  border-style: none;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.feedback{
+    color: #c000ff;
+    padding-top:5%;
+    text-align: left;
+    padding-left: 0;
+    background-color: #1d242f;
+}
+.feedback-content{
+    background-color: #1d242f;
+    width: 100%;
+}
+
+.control{
+    color: #fff;
+    background-color: #fff;
+    opacity: 100;
+    padding left: 20%;
+    padding right: 20%;
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.portfolio-head{
+    color: #c000ff;
+    padding-top:5%;
+    text-align: left;
+    padding-left: 0;
+    background-color: #fff;
+}
+/*Portfolio Images*/
+.port-container {
+    position: relative;
+    width: 100%;
+}
+
+.port-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.port-container:hover .image {
+  opacity: 0.3;
+}
+
+.port-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

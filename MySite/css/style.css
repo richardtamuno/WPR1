@@ -240,40 +240,43 @@ html {
 }
 /*Portfolio Images*/
 .port-container {
-    position: relative;
-    width: 100%;
+  position: relative;
 }
 
 .port-image {
-  opacity: 1;
-  display: block;
+  position: relative;
   width: 100%;
   height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #c000ff;
+  overflow: hidden;
+  width: 60%;
+  transition: fade 5s ease;
+  opacity: 0.8;
 }
-
-.port-container:hover .image {
-  opacity: 0.3;
-}
-
-.port-container:hover .middle {
-  opacity: 1;
+.port-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }
 
 .text {
-  background-color: #4CAF50;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  position: absolute;
+  vertical-align: middle;
+    text-align: center;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-top:40%;
+    padding-bottom: 50%;
+}
+
+.visit-site{
+    margin-top: 8%;
+    color: #c000ff;
+    background-color: #fff;
 }

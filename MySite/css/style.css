@@ -323,3 +323,29 @@ html {
     -webkit-box-shadow: none;
     box-shadow: none;
     width: 80px;
+
+    /*Contact*/
+    .form-group{
+        width: 100%;
+            background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+    border-bottom-width: 1px;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
+    padding: 1px 5px;
+    width: 100%;
+    }
+
+.form-group input, textarea{
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+    border-bottom-width: 1px;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
+    padding: 1px 5px;
+    width: 100%;
+}

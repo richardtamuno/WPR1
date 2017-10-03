@@ -11,20 +11,22 @@ html {
     color: white;
 }
 
+.typewrite{
+    color:#fff;
+    text-decoration: none;
+    font-size: 2em;
+}
 #h1name {
     font-weight: 400;
     font-size: 3em;
     letter-spacing: 7px;
 }
 
-#h3title {
-    letter-spacing: 3px;
-    font-size: 3em;
-}
+
 
 .content {
-    padding-top: 15%;
-    padding-bottom: 15%
+    padding-top: 20%;
+    padding-bottom: 20%
 }
 
 #home {
@@ -52,6 +54,7 @@ html {
 .porfoliobtn {
     color: #ffffff;
     background-color: #c000ff;
+    margin-top: 2%;
 }
 
 .headings {
@@ -338,8 +341,8 @@ html {
     width: 100%;
     }
 
-.form-group input, textarea{
-    background-color: transparent;
+textarea.form-control {
+    background-color: transparent !important;
     border-bottom-style: solid;
     border-bottom-color: #d9d9d9;
     border-bottom-width: 1px;
@@ -349,3 +352,10 @@ html {
     padding: 1px 5px;
     width: 100%;
 }
+
+.botom{
+    background-color: #fff;
+    width: 100%;
+}
+
+
